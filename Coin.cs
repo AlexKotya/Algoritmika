@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        Player player = other.GetComponent<Player>();
+        CoinsCounter player = other.GetComponent<CoinsCounter>();
 
         //Количество монеток обновляется
         player.CollectCoins();
